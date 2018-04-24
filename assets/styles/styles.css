@@ -1,0 +1,49 @@
+/* font declarations */
+@font-face {
+    font-family: Hind;
+    src: url('../fonts/Hind-Regular.ttf');
+}
+
+@font-face {
+    font-family: Hind-Light;
+    src: url('../fonts/Hind-Light.ttf');
+}
+
+@font-face {
+    font-family: Hind-SemiBold;
+    src: url('../fonts/Hind-SemiBold.ttf');
+}
+
+/* font base */
+
+*, *:after, *:before,
+h1, h2, h3, h4, h5, h6,
+p, div, span {
+    font-family: 'Hind', Arial, Helvetica, sans-serif;
+}
+
+/* header */
+
+.header {
+    padding: 14px 10px;
+    height: 128px;
+}
+
+.logoWrap, .nav {
+    height: 100%;
+}
+
+.logo {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: transparent;
+    background-image: url('../images/logo.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 100% auto;
+}
+
+.logo:hover, .logo:focus, .logo:active, .logo:visited {
+    color: transparent;
+}
