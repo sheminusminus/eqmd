@@ -54,6 +54,7 @@ a {
 
 .pageText {
     color: #4A4A4A;
+    font-size: 16px;
 }
 
 .primaryBorder {
@@ -69,7 +70,7 @@ a {
 /* ========= */
 
 .header {
-    padding: 14px 10px;
+    padding: 14px 20px;
     height: 156px;
 }
 
@@ -330,8 +331,16 @@ button.cta {
 }
 
 .clientCta {
-    padding: 12px 34px;
+    padding: 14px 34px 12px;
     margin: 34px auto 0;
     width: 100%;
     display: block;
+    transition: all 0.2s ease-in;
+}
+
+.clientCta:hover {
+    background: #81C153;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 0;
 }
