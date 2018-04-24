@@ -14,7 +14,9 @@
     src: url('../fonts/Hind-SemiBold.ttf');
 }
 
+/* ========= */
 /* font base */
+/* ========= */
 
 *, *:after, *:before,
 h1, h2, h3, h4, h5, h6,
@@ -22,16 +24,50 @@ p, div, span {
     font-family: 'Hind', Arial, Helvetica, sans-serif;
 }
 
+/* ========= */
+/* backgrounds base */
+/* ========= */
+
+.primaryBg {
+    background-color: #007DC3;
+}
+
+.secondaryBg {
+    background-color: #81C153;
+}
+
+/* ========= */
+/* anchor tags */
+/* ========= */
+
+a {
+    text-decoration: none;
+}
+
+a.primary {
+    color: #007DC3;
+}
+
+a.secondary {
+    color: #81C153;
+}
+
+/* ========= */
 /* header */
+/* ========= */
 
 .header {
     padding: 14px 10px;
-    height: 128px;
+    height: 156px;
 }
 
 .logoWrap, .nav {
     height: 100%;
 }
+
+/* ========= */
+/* header logo */
+/* ========= */
 
 .logo {
     display: block;
@@ -40,10 +76,145 @@ p, div, span {
     color: transparent;
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
-    background-position: left center;
+    background-position: left 45%;
     background-size: 100% auto;
+    max-width: 218px;
 }
 
 .logo:hover, .logo:focus, .logo:active, .logo:visited {
     color: transparent;
+}
+
+/* ========= */
+/* header nav */
+/* ========= */
+
+.navList {
+    list-style: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.navItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+
+.navItem a {
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+}
+
+.navItem a.loginLink {
+    border: 1px solid #007DC3;
+    padding: 10px 0;
+}
+
+/* ========= */
+/* tel number link */
+/* ========= */
+
+.telWrap {
+    text-align: right;
+    font-size: 22px;
+    padding-right: 56px;
+}
+
+/* ========= */
+/* footer base */
+/* ========= */
+
+.footer {
+    padding: 40px 40px 20px;
+    color: #ffffff;
+}
+
+.footer h3 {
+    text-align: center;
+    font-weight: 400;
+}
+
+.footerList {
+    list-style: none;
+}
+
+.footerList li {
+    margin: 15px 0;
+}
+
+.copyright {
+    text-align: center;
+}
+
+/* ========= */
+/* sections base */
+/* ========= */
+
+section {
+    min-height: 500px;
+}
+
+section .coverWrap {
+    position: relative;
+}
+
+section .cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* ========= */
+/* overlays */
+/* ========= */
+
+.overlay {
+    background: rgba(0, 0, 0, 0.54);
+}
+
+/* ========= */
+/* hero section */
+/* ========= */
+
+.hero {
+    background-image: url('../images/dispensing.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px;
+}
+
+.heroText h1 {
+    font-weight: 400;
+    margin: 0 0 0 0;
+}
+
+.heroText p {
+    margin: 0 auto 20px;
+    max-width: 400px;
+}
+
+/* ========= */
+/* cta buttons */
+/* ========= */
+
+button.cta {
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    width: 120px;
+    padding: 14px;
+    margin: 0 auto;
 }
