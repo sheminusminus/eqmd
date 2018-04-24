@@ -76,7 +76,7 @@ a.secondary {
     color: transparent;
     background-image: url('../images/logo.png');
     background-repeat: no-repeat;
-    background-position: left 45%;
+    background-position: left 30%;
     background-size: 100% auto;
     max-width: 218px;
 }
@@ -120,7 +120,6 @@ a.secondary {
 .telWrap {
     text-align: right;
     font-size: 22px;
-    padding-right: 56px;
 }
 
 /* ========= */
@@ -132,21 +131,46 @@ a.secondary {
     color: #ffffff;
 }
 
+.footerColumn {
+    padding: 0 10px;
+}
+
+.footerColumn:first-child {
+    padding-left: 0;
+}
+
+.footerColumn:last-child {
+    padding-right: 0;
+}
+
 .footer h3 {
-    text-align: center;
     font-weight: 400;
+    font-size: 20px;
 }
 
 .footerList {
     list-style: none;
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
 
 .footerList li {
     margin: 15px 0;
+    padding: 0 0 0 0;
+    font-size: 15px;
+}
+
+.contactInfo a {
+    color: white;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    display: inline-block;
 }
 
 .copyright {
     text-align: center;
+    padding: 20px 0 0 0;
+    opacity: 0.7;
 }
 
 /* ========= */
