@@ -65,6 +65,20 @@ a {
     border: 1px solid #81C153;
 }
 
+.finePrint {
+    color: #BFBDBF;
+}
+
+/* ========= */
+/* flex base */
+/* ========= */
+
+.verticalCenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 /* ========= */
 /* header */
 /* ========= */
@@ -211,7 +225,11 @@ section .cover {
 /* ========= */
 
 .overlay {
-    background: rgba(0, 0, 0, 0.54);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.blur {
+    filter: blur(1px);
 }
 
 /* ========= */
@@ -343,4 +361,18 @@ button.cta {
     color: #ffffff;
     cursor: pointer;
     border-radius: 0;
+}
+
+/* ======== */
+/* fine print section */
+/* ========= */
+
+section.finePrintSection {
+    min-height: 400px;
+    padding-bottom: 100px;
+}
+
+.finePrint {
+    max-width: 590px;
+    margin: 0 auto;
 }
