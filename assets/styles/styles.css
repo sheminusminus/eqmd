@@ -1,17 +1,12 @@
 /* font declarations */
 @font-face {
-    font-family: Hind;
-    src: url('../fonts/Hind-Regular.ttf');
+    font-family: GothamBook;
+    src: url('../fonts/GothamBookRegular.otf');
 }
 
 @font-face {
-    font-family: Hind-Light;
-    src: url('../fonts/Hind-Light.ttf');
-}
-
-@font-face {
-    font-family: Hind-SemiBold;
-    src: url('../fonts/Hind-SemiBold.ttf');
+    font-family: GothamLight;
+    src: url('../fonts/GothamLightRegular.otf');
 }
 
 /* ========= */
@@ -21,7 +16,7 @@
 *, *:after, *:before,
 h1, h2, h3, h4, h5, h6,
 p, div, span {
-    font-family: 'Hind', Arial, Helvetica, sans-serif;
+    font-family: 'GothamBook', Arial, Helvetica, sans-serif;
 }
 
 /* ========= */
@@ -36,19 +31,19 @@ p, div, span {
     background-color: #81C153;
 }
 
-/* ========= */
-/* anchor tags */
-/* ========= */
-
-a {
-    text-decoration: none;
-}
-
 .primary {
     color: #007DC3;
 }
 
+button.cta.primary {
+    color: #007DC3;
+}
+
 .secondary {
+    color: #81C153;
+}
+
+button.cta.secondary {
     color: #81C153;
 }
 
@@ -65,8 +60,20 @@ a {
     border: 1px solid #81C153;
 }
 
+button.cta.secondaryBorder {
+    border: 1px solid #81C153;
+}
+
 .finePrint {
     color: #BFBDBF;
+}
+
+/* ========= */
+/* anchor tags */
+/* ========= */
+
+a {
+    text-decoration: none;
 }
 
 /* ========= */
@@ -258,8 +265,9 @@ section .cover {
 }
 
 .heroText p {
-    margin: 0 auto 20px;
-    max-width: 400px;
+    margin: 5px auto 30px;
+    max-width: 430px;
+    text-align: center;
 }
 
 /* ========= */
@@ -267,11 +275,58 @@ section .cover {
 /* ========= */
 
 button.cta {
-    border: 1px solid #ffffff;
-    color: #ffffff;
-    width: 120px;
-    padding: 14px;
+    display: block;
+    border: 2px solid;
     margin: 0 auto;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.2s ease;
+    padding: .3em 1.5em;
+    font-size: 20px;
+    position: relative;
+    line-height: 1.7em;
+    font-weight: 500;
+}
+
+button.cta.withBg {
+    color: #ffffff;
+    border-color: #ffffff;
+}
+
+button.cta.noBg {
+    border-width: 2px;
+}
+
+button.cta:after {
+    display: inline-block;
+    position: absolute;
+    margin-left: -1em;
+    opacity: 0;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f054";
+    font-size: 16px;
+    transition: all .2s ease;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+button.cta:hover {
+    padding: .3em 2.2em .3em .9em;
+    border: 2px solid transparent;
+    background-color: rgba(255,255,255,.2);
+}
+
+button.cta.noBg:hover {
+    background-color: rgba(0,0,0,.05);
+}
+
+button.cta:hover:after {
+    margin-left: 12px;
+    opacity: 1;
+    padding-top: 1px;
 }
 
 /* ======== */
@@ -348,19 +403,19 @@ button.cta {
     padding-top: 20px;
 }
 
-.clientCta {
-    padding: 14px 34px 12px;
-    margin: 34px auto 0;
-    width: 100%;
-    display: block;
-    transition: all 0.2s ease-in;
+button.cta.clientCta {
+    /*padding: 14px 34px 12px;*/
+    /*margin: 34px auto 0;*/
+    /*width: 100%;*/
+    /*display: block;*/
+    /*transition: all 0.2s ease-in;*/
 }
 
 .clientCta:hover {
-    background: #81C153;
-    color: #ffffff;
-    cursor: pointer;
-    border-radius: 0;
+    /*background: #81C153;*/
+    /*color: #ffffff;*/
+    /*cursor: pointer;*/
+    /*border-radius: 0;*/
 }
 
 /* ======== */
