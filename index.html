@@ -16,45 +16,46 @@
       <a href="./" class="cell small-12 logo">Equity Medical Solutions</a>
     </div>
     <div class="grid-y cell small-offset-1 small-8 navWrap">
-      <nav class="grid-x cell small-9 nav">
+      <nav class="grid-x cell small-12 nav">
         <ul class="grid-x cell small-12 navList">
           <li class="cell small-2 navItem">
-            <a href="." class="primary">EqMd</a>
+            <a href="." class="primary primaryHover">EqMd</a>
           </li>
           <li class="cell small-2 navItem">
-            <a href="./technology" class="primary">Technology</a>
+            <a href="./technology" class="primary primaryHover">Technology</a>
           </li>
           <li class="cell small-2 navItem">
-            <a href="./support" class="primary">Support</a>
+            <a href="./support" class="primary primaryHover">Support</a>
           </li>
           <li class="cell small-2 navItem">
-            <a href="./faqs" class="primary">FAQs</a>
+            <a href="./faqs" class="primary primaryHover">FAQs</a>
           </li>
           <li class="cell small-2 navItem">
-            <a href="./contact" class="primary">Contact</a>
+            <a href="./contact" class="primary primaryHover">Contact</a>
           </li>
           <li class="cell small-2 navItem">
-            <a href="#" class="primary loginLink">
-              Client
-              <br/>
-              Login
-            </a>
+            <button class="primary cta noBg loginAction">
+              Client Login
+            </button>
           </li>
         </ul>
       </nav>
-      <div class="cell small-3 telWrap">
-        <a class="secondary telLink" href="tel:1-866-352-6011">Toll-Free: 1-866-352-6011</a>
-      </div>
+      <!--<div class="cell small-3 telWrap">-->
+        <!--<a class="secondary telLink secondaryHover" href="tel:1-866-352-6011">Toll-Free: 1-866-352-6011</a>-->
+      <!--</div>-->
     </div>
   </header>
 
   <section class="grid-x">
-    <div class="cell small-12 coverWrap hero">
-      <div class="overlay cover blur"></div>
+    <div class="cell small-12 coverWrap hero greyscale">
+      <div class="overlay cover"></div>
       <div class="grid-y cover heroText">
         <h1>Expediency</h1>
         <p>EqMD programs guarantee that your patients obtain their medications and test results at the point of care. The whole process can be performed with your existing staff in less than 30 seconds per patient.</p>
-        <button class="cta withBg">Read More</button>
+        <div class="actions">
+          <button class="cta withBg"><span class="blurBg"></span>Read More</button>
+          <a href="#" class="telLink secondary secondaryHover">Toll-Free: 1-866-352-6011</a>
+        </div>
       </div>
     </div>
   </section>
@@ -71,15 +72,13 @@
       </div>
       <div class="bodyBlurb bottom withFigure">
         <h4 class="primary">Your Patients Will Appreciate The Convenience</h4>
-        <div class="blurbContent">
-          <div class="blurbFigWrapper">
-            <figure class="fig">
-              <img src="./assets/images/convenience.png" alt="Your Patients Will Appreciate The Convenience" />
-            </figure>
+        <div class="media-object stack-for-small">
+          <div class="media-object-section">
+            <img src="./assets/images/hands.jpeg" alt="Your Patients Will Appreciate The Convenience" />
           </div>
-          <p class="blurbText pageText">
-            According to recent national study: "Three out of four Americans would have their prescription filled in their doctor's office instead of a pharmacy if given the choice, a new study finds, suggesting physicians are missing an opportunity to improve patient satisfaction and enhance revenue by not dispensing medicine in their office."
-          </p>
+          <div class="media-object-section supportingText">
+            <p>According to recent national study: "Three out of four Americans would have their prescription filled in their doctor's office instead of a pharmacy if given the choice, a new study finds, suggesting physicians are missing an opportunity to improve patient satisfaction and enhance revenue by not dispensing medicine in their office.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -87,7 +86,7 @@
       <div class="shadowBox">
         <div class="panelFigWrapper">
           <figure class="fig">
-            <img src="./assets/images/device.png" alt="For Clients" />
+            <img src="./assets/images/stethoscope.jpeg" alt="For Clients" />
           </figure>
         </div>
         <div class="panelBlurb">
