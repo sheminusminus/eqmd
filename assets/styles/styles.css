@@ -66,6 +66,14 @@ button.cta.secondary {
     font-size: 16px;
 }
 
+.pageTextBorder {
+    border: 1px solid #4A4A4A;
+}
+
+.pageTextBg {
+    background: #4A4A4A;
+}
+
 .primaryBorder {
     border: 1px solid #007DC3;
 }
@@ -432,7 +440,7 @@ button.cta.read {
 /* ========= */
 
 .bodySection {
-    padding: 80px 34px;
+    padding: 100px 34px;
 }
 
 .fig {
@@ -515,11 +523,62 @@ button.cta.read {
 /* ========= */
 
 section.finePrintSection {
-    min-height: 400px;
-    padding-bottom: 100px;
+    min-height: initial;
+    padding-bottom: 60px;
+}
+
+section.finePrintSection.padTop {
+    padding-top: 65px;
 }
 
 .finePrint {
     max-width: 590px;
     margin: 0 auto;
 }
+
+/* ======== */
+/* eqmd page about */
+/* ========= */
+
+.aboutEq {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    min-height: 300px;
+}
+
+.aboutEq h1 {
+    font-weight: 400;
+    text-align: center;
+    margin-top: 0;
+}
+
+.aboutEq p {
+    text-align: center;
+    font-size: 18px;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+/* ======== */
+/* technology page */
+/* ========= */
+
+.techHeader {
+    height: 200px;
+}
+
+.techHeader h1 {
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.techHeader h1.pageText {
+    font-size: 2em;
+}
+
+
+
+
