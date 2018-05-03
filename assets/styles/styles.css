@@ -823,3 +823,22 @@ section.finePrintSection.padTop {
     list-style: disc;
     line-height: 1.7;
 }
+
+/* ======== */
+/* contact page */
+/* ========= */
+
+.mapSection {
+    position: relative;
+    margin-bottom: 60px;
+    height: 540px;
+}
+
+.mapSection > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: lightgray;
+}
