@@ -776,3 +776,50 @@ section.finePrintSection.padTop {
     color: #4A4A4A;
     line-height: 1.8;
 }
+
+/* ======== */
+/* faq page */
+/* ========= */
+
+.accordionSection ul {
+    padding: 0 0 0 0;
+    margin-bottom: 25px;
+}
+
+.faqTitle {
+    margin-top: 60px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+
+.accordionSection .accordion-title {
+    font-size: 20px;
+    color: #4A4A4A;
+    padding: 1.7rem 40px;
+    background-color: #F3F3F3;
+    border: 1px solid #979797;
+    border-bottom: 0;
+}
+
+.accordionSection .accordion-title:before {
+    right: 25px;
+}
+
+.accordionSection li:last-child:not(.is-active) .accordion-title {
+    border-bottom: 1px solid #979797;
+}
+
+.accordionSection .accordion-content {
+    padding: 10px 40px;
+}
+
+.accordionSection .accordion-content p {
+    font-size: 20px;
+}
+
+.accordionSection .accordion-content ul {
+    padding-left: 20px;
+    list-style: disc;
+    line-height: 1.7;
+}
