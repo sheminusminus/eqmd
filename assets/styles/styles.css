@@ -117,8 +117,12 @@ a {
 /* ========= */
 
 .header {
-    padding: 14px 20px;
-    height: 128px;
+    padding: 14px 20px 0;
+    height: 108px;
+}
+
+.tel.pageTop {
+    padding-right: 20px;
 }
 
 .logoWrap, .nav {
@@ -182,6 +186,38 @@ a {
 }
 
 /* ========= */
+/* slider */
+/* ========= */
+
+.orbit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.orbit-wrapper, .orbit-wrapper ul {
+    height: 100%;
+    width: 100%;
+}
+
+.orbit-container {
+    padding: 0 0 0 0;
+}
+
+.orbit-container li {
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.orbit-container li img {
+    min-height: 600px;
+    min-width: 100vw;
+}
+
+/* ========= */
 /* footer base */
 /* ========= */
 
@@ -238,6 +274,10 @@ a {
 
 section {
     min-height: 500px;
+}
+
+.orbitSection {
+    min-height: 600px;
 }
 
 section .coverWrap {
@@ -411,7 +451,7 @@ button.cta.loginAction:hover:after {
 }
 
 button.cta.read {
-    margin-top: 17px;
+    margin-top: 25px;
 }
 
 .telLinkWrapper {
@@ -432,7 +472,10 @@ button.cta.read {
     display: inline-block;
     font-size: 20px;
     margin-top: 10px;
-    filter: brightness(125%);
+    color: #81C153;
+    width: 100%;
+    text-align: right;
+    /*filter: brightness(125%);*/
 }
 
 /* ======== */
