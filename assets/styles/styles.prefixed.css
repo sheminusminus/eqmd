@@ -776,3 +776,19 @@ section.finePrintSection.padTop {
 .quadList p {
     padding: 0 30px;
 }
+
+/* ======== */
+/* support page */
+/* ========= */
+
+.supportHeader {
+    text-align: center;
+    font-weight: 400;
+}
+
+.supportBanner p {
+    padding: 60px 100px;
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+}
