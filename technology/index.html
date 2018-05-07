@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Equity Medical Solutions</title>
   <link href="../assets/vendor/foundation-6.4.2/css/foundation.min.css" rel="stylesheet" />
+  <link href="../assets/vendor/lightbox/css/lightbox.min.css" rel="stylesheet" />
+  <link href="../assets/vendor/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
   <link href="../assets/styles/styles.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous" />
 </head>
@@ -46,12 +48,13 @@
 <a href="#" class="tel pageTop secondary">Toll-Free: 1-866-352-6011</a>
 
 <section class="techBanner">
-  <div class="grid-y techHeader">
+  <div class="grid-y techHeader taller">
     <div class="cell small-6 primaryBorder headerTop">
       <h1 class="primary">EQMDeRX Web Based Physician Dispensing Software</h1>
     </div>
-    <div class="cell small-6 primaryBg headerBottom">
+    <div class="cell small-6 primaryBg headerBottom withPad">
       <p>
+        Our state of the art claims management platform, named EQMDeRX, enables Physicians to eliminate the traditional time consuming barriers related with physician dispensing.
         Increase productivity and ensure medication safety with the most complete and efficient physician
         <a href="#" class="secondary">dispensing solution available</a>. EQMDeRX delivers maximum flexibility to meet your dispensing needs.
       </p>
@@ -64,18 +67,18 @@
         <img src="../assets/images/meder.png" alt="Applying innovative technology" />
       </div>
       <div class="cell small-9">
-        <p>
-          EQMDeRX provides a point-of-care dispensing solution for unit-of-use medications. Applying innovative technology, EQMDeRX enables physicians and approved staff members to provide patients with medications quickly and safely at the point-of-care.
+        <p class="pageText">
+          <strong>EQMDeRX provides a point-of-care dispensing solution</strong> for unit-of-use medications. Applying innovative technology, EQMDeRX enables physicians and approved staff members to provide patients with medications quickly and safely at the point-of-care.
         </p>
       </div>
     </div>
     <div class="grid-x bar">
       <div class="cell small-9">
-      <p>
+      <p class="pageText">
         Utilizing bar-code technology, EQMDeRX verifies the prescribed medication for each bottle dispensed. Once verified, a patient-specific label, DUR, and education sheet are created. EQMDeRX provides complete tracking of inventory and all data associated with dispensing including physician name, patient name, medication, and dispensing facility.
       </p>
       </div>
-      <div class="cell small-3">
+      <div class="cell small-3 content-end">
         <img src="../assets/images/barcode.png" alt="Bar code technology" />
       </div>
     </div>
@@ -96,8 +99,9 @@
 
   <div class="grid-x techSection">
     <div class="cell small-7">
-      <ol class="processList">
+      <ul class="processList">
         <li class="processItem">
+          <i class="fas fa-check"></i>
           <span class="itemTitle secondary">Select the Patient</span>
           <ul class="processSublist">
             <li>Enter Information Manually</li>
@@ -106,7 +110,7 @@
           </ul>
         </li>
         <li class="processItem">
-          <span class="itemTitle secondary">Select the Patient</span>
+          <span class="itemTitle secondary">Select the Medication(s)</span>
           <ul class="processSublist">
             <li>Scan the barcode on the bottle</li>
           </ul>
@@ -123,10 +127,12 @@
         <li class="processItem">
           <span class="itemTitle secondary">Print the Label</span>
         </li>
-      </ol>
+      </ul>
     </div>
     <div class="cell small-5 centerImage verticalCenter">
-      <img src="../assets/images/rx_label.png" alt="Prescription label" />
+      <a href="../assets/images/prescriptionlabel.jpg" data-lightbox="eqmd">
+        <img src="../assets/images/rx_label.png" alt="Prescription label" />
+      </a>
     </div>
   </div>
 </section>
@@ -243,5 +249,6 @@
 <script src="../assets/vendor/foundation-6.4.2/js/vendor/what-input.js"></script>
 <script src="../assets/vendor/foundation-6.4.2/js/vendor/foundation.js"></script>
 <script src="../assets/vendor/foundation-6.4.2/js/app.js"></script>
+<script src="../assets/vendor/lightbox/js/lightbox.min.js"></script>
 </body>
 </html>

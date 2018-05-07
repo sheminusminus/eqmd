@@ -38,7 +38,7 @@ p, div, span {
 }
 
 .secondaryBg {
-    background-color: #7fc34e;
+    background-color: #7FC34E;
 }
 
 .primary {
@@ -50,15 +50,15 @@ button.cta.primary {
 }
 
 .secondary {
-    color: #7fc34e;
+    color: #7FC34E;
 }
 
 button.cta.secondary {
-    color: #7fc34e;
+    color: #7FC34E;
 }
 
 .secondaryHover:hover {
-    color: #7fc34e;
+    color: #7FC34E;
 }
 
 .pageText {
@@ -92,6 +92,14 @@ button.cta.secondaryBorder {
 
 .finePrint {
     color: #BFBDBF;
+}
+
+.strong {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 /* ========= */
@@ -210,6 +218,51 @@ a {
     height: 100%;
     width: 100vw;
     overflow: hidden;
+}
+
+.orbit-figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.orbit-info {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.35));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+}
+
+.orbit-info.darker-bg {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.40));
+}
+
+.orbit-info.no-bg {
+    background-image: none;
+}
+
+.orbit-info h1, .orbit-info p {
+    width: 100%;
+    text-align: center;
+}
+
+.orbit-info p {
+    font-size: 18px;
+}
+
+.dark-text {
+    color: #5D5d5D;
+}
+
+.orbit-info.text-only {
+    justify-content: center;
 }
 
 .orbit-container li img {
@@ -567,15 +620,19 @@ button.cta.read {
 
 section.finePrintSection {
     min-height: initial;
-    padding-bottom: 60px;
+    /*padding-bottom: 60px;*/
+    padding-bottom: 30px;
 }
 
 section.finePrintSection.padTop {
-    padding-top: 65px;
+    /*padding-top: 65px;*/
+    padding-top: 85px;
 }
 
 .finePrint {
-    max-width: 590px;
+    text-align: justify;
+    /*max-width: 590px;*/
+    padding: 0 30px;
     margin: 0 auto;
 }
 
@@ -588,7 +645,7 @@ section.finePrintSection.padTop {
     flex-direction: column;
     justify-content: center;
     color: white;
-    min-height: 300px;
+    min-height: 340px;
     margin-top: 60px;
 }
 
@@ -600,7 +657,7 @@ section.finePrintSection.padTop {
 
 .aboutEq p {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     max-width: 85%;
     margin: 0 auto;
 }
@@ -611,18 +668,32 @@ section.finePrintSection.padTop {
 }
 
 .triList li {
-    padding: 0 25px;
+    padding: 0 35px;
 }
 
 .triList li h5 {
     font-size: 32px;
-    text-align: center;
-    font-weight: 400;
+    text-align: left;
+    font-weight: 500;
 }
 
 .bulletsSection h4 {
     font-size: 24px;
     text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+
+.bulletsSection ul {
+    margin-top: 0;
+}
+
+.checkItems li {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
 .bulletsSection ul li {
@@ -630,6 +701,12 @@ section.finePrintSection.padTop {
     max-width: 500px;
     margin: 0 auto;
     line-height: 1.8;
+    list-style-image: url('../images/tick.gif');
+}
+
+.supportingImage {
+    padding: 0 40px;
+    padding-bottom: 40px;
 }
 
 /* ======== */
@@ -644,6 +721,11 @@ section.finePrintSection.padTop {
     height: 200px;
 }
 
+.techHeader.taller {
+    min-height: 200px;
+    height: auto;
+}
+
 .techHeader.short {
     height: 100px;
 }
@@ -652,6 +734,10 @@ section.finePrintSection.padTop {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.techHeader .headerBottom.withPad {
+    padding: 30px 0;
 }
 
 .techHeader .headerBottom p {
@@ -690,6 +776,11 @@ section.finePrintSection.padTop {
     font-size: 16px;
 }
 
+.content-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
 .centerImage img {
     display: block;
     margin: 0 auto;
@@ -711,21 +802,21 @@ section.finePrintSection.padTop {
     font-size: 32px;
 }
 
-.processList .processItem:first-of-type:before {
-    content: '1.';
-}
+/*.processList .processItem:first-of-type:before {*/
+    /*content: '1.';*/
+/*}*/
 
-.processList .processItem:nth-of-type(2):before {
-    content: '2.';
-}
+/*.processList .processItem:nth-of-type(2):before {*/
+    /*content: '2.';*/
+/*}*/
 
-.processList .processItem:nth-of-type(3):before {
-    content: '3.';
-}
+/*.processList .processItem:nth-of-type(3):before {*/
+    /*content: '3.';*/
+/*}*/
 
-.processList .processItem:nth-of-type(4):before {
-    content: '4.';
-}
+/*.processList .processItem:nth-of-type(4):before {*/
+    /*content: '4.';*/
+/*}*/
 
 .processSublist {
     list-style: none;
@@ -748,7 +839,7 @@ section.finePrintSection.padTop {
 }
 
 .secureImage {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .quadList {
@@ -761,7 +852,7 @@ section.finePrintSection.padTop {
 }
 
 .quadList p {
-    padding: 0 30px;
+    padding: 0 35px;
 }
 
 /* ======== */
