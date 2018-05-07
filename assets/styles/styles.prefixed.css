@@ -38,7 +38,7 @@ p, div, span {
 }
 
 .secondaryBg {
-    background-color: #7fc34e;
+    background-color: #7FC34E;
 }
 
 .primary {
@@ -50,15 +50,15 @@ button.cta.primary {
 }
 
 .secondary {
-    color: #7fc34e;
+    color: #7FC34E;
 }
 
 button.cta.secondary {
-    color: #7fc34e;
+    color: #7FC34E;
 }
 
 .secondaryHover:hover {
-    color: #7fc34e;
+    color: #7FC34E;
 }
 
 .pageText {
@@ -94,6 +94,14 @@ button.cta.secondaryBorder {
     color: #BFBDBF;
 }
 
+.strong {
+    font-weight: bold;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
 /* ========= */
 /* anchor tags */
 /* ========= */
@@ -124,8 +132,12 @@ a {
 /* ========= */
 
 .header {
-    padding: 14px 20px;
-    height: 128px;
+    padding: 14px 20px 0;
+    height: 108px;
+}
+
+.tel.pageTop {
+    padding-right: 20px;
 }
 
 .logoWrap, .nav {
@@ -196,6 +208,108 @@ a {
 }
 
 /* ========= */
+/* slider */
+/* ========= */
+
+.orbit-bullets button {
+    width: 0.8em;
+    height: 0.8em;
+    cursor: pointer;
+}
+
+.orbit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.orbit-wrapper, .orbit-wrapper ul {
+    height: 100%;
+    width: 100%;
+}
+
+.orbit-container {
+    padding: 0 0 0 0;
+}
+
+.orbit-container li {
+    height: 100%;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.orbit-figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.orbit-info {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.35)));
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.35));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.35));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.35));
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding-bottom: 80px;
+}
+
+.orbit-info.darker-bg {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.40)));
+    background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.40));
+    background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.40));
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.40));
+}
+
+.orbit-info.no-bg {
+    background-image: none;
+}
+
+.orbit-info h1 {
+    margin-bottom: 0;
+}
+
+.orbit-info h1, .orbit-info p {
+    width: 100%;
+    text-align: center;
+}
+
+.orbit-info p {
+    font-size: 18px;
+}
+
+.dark-text {
+    color: #5D5d5D;
+}
+
+.orbit-info.text-only {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.orbit-container li img {
+    min-height: 600px;
+    min-width: 100vw;
+}
+
+/* ========= */
 /* footer base */
 /* ========= */
 
@@ -252,6 +366,10 @@ a {
 
 section {
     min-height: 500px;
+}
+
+.orbitSection {
+    min-height: 600px;
 }
 
 section .coverWrap {
@@ -443,7 +561,7 @@ button.cta.loginAction:hover:after {
 }
 
 button.cta.read {
-    margin-top: 17px;
+    margin-top: 25px;
 }
 
 .telLinkWrapper {
@@ -468,8 +586,10 @@ button.cta.read {
     display: inline-block;
     font-size: 20px;
     margin-top: 10px;
-    -webkit-filter: brightness(125%);
-    filter: brightness(125%);
+    color: #81C153;
+    width: 100%;
+    text-align: right;
+    /*filter: brightness(125%);*/
 }
 
 /* ======== */
@@ -571,15 +691,19 @@ button.cta.read {
 
 section.finePrintSection {
     min-height: initial;
-    padding-bottom: 60px;
+    /*padding-bottom: 60px;*/
+    padding-bottom: 30px;
 }
 
 section.finePrintSection.padTop {
-    padding-top: 65px;
+    /*padding-top: 65px;*/
+    padding-top: 85px;
 }
 
 .finePrint {
-    max-width: 590px;
+    text-align: justify;
+    /*max-width: 590px;*/
+    padding: 0 30px;
     margin: 0 auto;
 }
 
@@ -599,7 +723,8 @@ section.finePrintSection.padTop {
     -ms-flex-pack: center;
     justify-content: center;
     color: white;
-    min-height: 300px;
+    min-height: 340px;
+    margin-top: 60px;
 }
 
 .aboutEq h1 {
@@ -610,7 +735,7 @@ section.finePrintSection.padTop {
 
 .aboutEq p {
     text-align: center;
-    font-size: 18px;
+    font-size: 20px;
     max-width: 85%;
     margin: 0 auto;
 }
@@ -621,18 +746,32 @@ section.finePrintSection.padTop {
 }
 
 .triList li {
-    padding: 0 25px;
+    padding: 0 35px;
 }
 
 .triList li h5 {
     font-size: 32px;
-    text-align: center;
-    font-weight: 400;
+    text-align: left;
+    font-weight: 500;
 }
 
 .bulletsSection h4 {
     font-size: 24px;
     text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+    padding-left: 50px;
+}
+
+.bulletsSection ul {
+    margin-top: 0;
+}
+
+.checkItems li {
+    font-size: 16px;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.8;
 }
 
 .bulletsSection ul li {
@@ -640,14 +779,29 @@ section.finePrintSection.padTop {
     max-width: 500px;
     margin: 0 auto;
     line-height: 1.8;
+    list-style-image: url('../images/tick.gif');
+}
+
+.supportingImage {
+    padding: 0 40px;
+    padding-bottom: 40px;
 }
 
 /* ======== */
 /* technology page */
 /* ========= */
 
+.techBanner {
+    margin-top: 60px;
+}
+
 .techHeader {
     height: 200px;
+}
+
+.techHeader.taller {
+    min-height: 200px;
+    height: auto;
 }
 
 .techHeader.short {
@@ -665,6 +819,10 @@ section.finePrintSection.padTop {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+}
+
+.techHeader .headerBottom.withPad {
+    padding: 30px 0;
 }
 
 .techHeader .headerBottom p {
@@ -703,9 +861,23 @@ section.finePrintSection.padTop {
     font-size: 16px;
 }
 
+.content-end {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
 .centerImage img {
     display: block;
     margin: 0 auto;
+}
+
+.rightImage img {
+    display: block;
+    margin-left: auto;
 }
 
 .processList {
@@ -761,7 +933,7 @@ section.finePrintSection.padTop {
 }
 
 .secureImage {
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .quadList {
@@ -774,7 +946,7 @@ section.finePrintSection.padTop {
 }
 
 .quadList p {
-    padding: 0 30px;
+    padding: 0 35px;
 }
 
 /* ======== */
@@ -784,6 +956,7 @@ section.finePrintSection.padTop {
 .supportHeader {
     text-align: center;
     font-weight: 400;
+    margin-top: 60px;
 }
 
 .supportBanner p {
@@ -791,4 +964,114 @@ section.finePrintSection.padTop {
     color: #ffffff;
     font-size: 22px;
     text-align: center;
+}
+
+.supportBullets {
+    padding: 40px 80px;
+    margin-bottom: 80px;
+}
+
+.marketingSupport {
+    padding: 30px 40px;
+}
+
+.marketingSupport img {
+    width: 280px;
+    height: 173px;
+    margin: 0 auto;
+    display: block;
+}
+
+.marketingSupport h3 {
+    font-size: 28px;
+    font-weight: 400;
+    text-align: center;
+    margin: 30px 0 15px;
+}
+
+.marketingSupport p {
+    margin: 0 0 0 0;
+    color: #4A4A4A;
+}
+
+.supportBullets ul {
+    padding: 20px 0 0 0;
+    margin: 0 0 0 0;
+}
+
+.supportBullets ul li {
+    font-size: 24px;
+    color: #4A4A4A;
+    line-height: 1.8;
+}
+
+/* ======== */
+/* faq page */
+/* ========= */
+
+.accordionSection ul {
+    padding: 0 0 0 0;
+    margin-bottom: 25px;
+}
+
+.faqTitle {
+    margin-top: 60px;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+}
+
+.accordion-item .accordion-title {
+    font-size: 20px;
+    color: #4A4A4A;
+    padding: 1.7rem 40px;
+    background-color: #F3F3F3;
+    border: 1px solid #979797;
+    border-bottom: 0;
+}
+
+.accordion-item.is-active .accordion-title {
+    border-bottom: 1px solid #979797;
+}
+
+.accordionSection .accordion-title:before {
+    right: 25px;
+}
+
+.accordionSection li:last-child:not(.is-active) .accordion-title {
+    border-bottom: 1px solid #979797;
+}
+
+.accordionSection .accordion-content {
+    padding: 10px 40px;
+}
+
+.accordionSection .accordion-content p {
+    font-size: 20px;
+}
+
+.accordionSection .accordion-content ul {
+    padding-left: 20px;
+    list-style: disc;
+    line-height: 1.7;
+}
+
+/* ======== */
+/* contact page */
+/* ========= */
+
+.mapSection {
+    position: relative;
+    margin-bottom: 60px;
+    height: 540px;
+    margin-top: 60px;
+}
+
+.mapSection > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: lightgray;
 }

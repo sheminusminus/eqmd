@@ -197,6 +197,12 @@ a {
 /* slider */
 /* ========= */
 
+.orbit-bullets button {
+    width: 0.8em;
+    height: 0.8em;
+    cursor: pointer;
+}
+
 .orbit {
     position: absolute;
     top: 0;
@@ -246,6 +252,10 @@ a {
 
 .orbit-info.no-bg {
     background-image: none;
+}
+
+.orbit-info h1 {
+    margin-bottom: 0;
 }
 
 .orbit-info h1, .orbit-info p {
@@ -786,6 +796,11 @@ section.finePrintSection.padTop {
     margin: 0 auto;
 }
 
+.rightImage img {
+    display: block;
+    margin-left: auto;
+}
+
 .processList {
     list-style: none;
 }
@@ -802,21 +817,21 @@ section.finePrintSection.padTop {
     font-size: 32px;
 }
 
-/*.processList .processItem:first-of-type:before {*/
-    /*content: '1.';*/
-/*}*/
+.processList .processItem:first-of-type:before {
+    content: '1.';
+}
 
-/*.processList .processItem:nth-of-type(2):before {*/
-    /*content: '2.';*/
-/*}*/
+.processList .processItem:nth-of-type(2):before {
+    content: '2.';
+}
 
-/*.processList .processItem:nth-of-type(3):before {*/
-    /*content: '3.';*/
-/*}*/
+.processList .processItem:nth-of-type(3):before {
+    content: '3.';
+}
 
-/*.processList .processItem:nth-of-type(4):before {*/
-    /*content: '4.';*/
-/*}*/
+.processList .processItem:nth-of-type(4):before {
+    content: '4.';
+}
 
 .processSublist {
     list-style: none;
@@ -927,13 +942,17 @@ section.finePrintSection.padTop {
     text-align: center;
 }
 
-.accordionSection .accordion-title {
+.accordion-item .accordion-title {
     font-size: 20px;
     color: #4A4A4A;
     padding: 1.7rem 40px;
     background-color: #F3F3F3;
     border: 1px solid #979797;
     border-bottom: 0;
+}
+
+.accordion-item.is-active .accordion-title {
+    border-bottom: 1px solid #979797;
 }
 
 .accordionSection .accordion-title:before {
@@ -966,6 +985,7 @@ section.finePrintSection.padTop {
     position: relative;
     margin-bottom: 60px;
     height: 540px;
+    margin-top: 60px;
 }
 
 .mapSection > div {

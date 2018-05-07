@@ -8,7 +8,7 @@
   <link href="../assets/vendor/foundation-6.4.2/css/foundation.min.css" rel="stylesheet" />
   <link href="../assets/vendor/lightbox/css/lightbox.min.css" rel="stylesheet" />
   <link href="../assets/vendor/font-awesome/css/fontawesome-all.min.css" rel="stylesheet" />
-  <link href="../assets/styles/styles.css" rel="stylesheet" />
+  <link href="../assets/styles/styles.prefixed.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous" />
 </head>
 <body>
@@ -53,7 +53,7 @@
       <h1 class="primary">EQMDeRX Web Based Physician Dispensing Software</h1>
     </div>
     <div class="cell small-6 primaryBg headerBottom withPad">
-      <p>
+      <p class="pageText">
         Our state of the art claims management platform, named EQMDeRX, enables Physicians to eliminate the traditional time consuming barriers related with physician dispensing.
         Increase productivity and ensure medication safety with the most complete and efficient physician
         <a href="#" class="secondary">dispensing solution available</a>. EQMDeRX delivers maximum flexibility to meet your dispensing needs.
@@ -101,23 +101,22 @@
     <div class="cell small-7">
       <ul class="processList">
         <li class="processItem">
-          <i class="fas fa-check"></i>
           <span class="itemTitle secondary">Select the Patient</span>
-          <ul class="processSublist">
+          <ul class="processSublist pageText">
             <li>Enter Information Manually</li>
             <li>Swipe a driver's license or credit card</li>
             <li>Import from Practice Management software</li>
           </ul>
         </li>
         <li class="processItem">
-          <span class="itemTitle secondary">Select the Medication(s)</span>
-          <ul class="processSublist">
+          <span class="itemTitle secondary">Select the Medication</span>
+          <ul class="processSublist pageText">
             <li>Scan the barcode on the bottle</li>
           </ul>
         </li>
         <li class="processItem">
           <span class="itemTitle secondary">Perform the DUR (Optional)</span>
-          <ul class="processSublist">
+          <ul class="processSublist pageText">
             <li>Drug/Drug Interaction</li>
             <li>Drug/Allergy Contraindications</li>
             <li>Drug Over-Utilization</li>
@@ -129,7 +128,7 @@
         </li>
       </ul>
     </div>
-    <div class="cell small-5 centerImage verticalCenter">
+    <div class="cell small-5 rightImage verticalCenter">
       <a href="../assets/images/prescriptionlabel.jpg" data-lightbox="eqmd">
         <img src="../assets/images/rx_label.png" alt="Prescription label" />
       </a>
