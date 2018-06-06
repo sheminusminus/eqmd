@@ -368,6 +368,14 @@ a {
     font-size: 15px;
 }
 
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
 .contactInfo a {
     color: white;
     line-height: 1.4;
@@ -1221,6 +1229,28 @@ section.finePrintSection.padTop {
 /* ======== */
 /* contact page */
 /* ========= */
+
+.contactInfoSection {
+    min-height: initial;
+}
+
+.contactInfoSection h3 {
+    font-size: 22px;
+    padding: 24px 0;
+    text-align: center;
+}
+
+.contactInfoSection p {
+    text-align: center;
+}
+
+.contactInfoSection a {
+    color: #4A4A4A;
+}
+
+.contactInfoSection a:hover {
+    text-decoration: underline;
+}
 
 .mapSection {
     position: relative;
