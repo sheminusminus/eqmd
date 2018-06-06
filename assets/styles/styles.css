@@ -514,6 +514,18 @@ button.cta {
     font-weight: 500;
 }
 
+button.cta a:not(.clientLogin) {
+    color: #fff;
+}
+
+.header button.cta a {
+    color: #007dc3;
+}
+
+button.cta.clientLoginBtn a:not(.clientLogin) {
+    color: #7FC34E;
+}
+
 button .blurBg {
     position: absolute;
     top: 0;
@@ -564,6 +576,10 @@ button.cta:hover:after {
     margin-left: 12px;
     opacity: 1;
     padding-top: 2px;
+}
+
+button.cta.clientLoginBtn:hover:after {
+    margin-left: 60px;
 }
 
 button.cta.loginAction {
