@@ -285,6 +285,7 @@ a {
     position: absolute;
     top: 0;
     left: 0;
+    overflow: hidden;
 }
 
 .orbit-info {
@@ -298,7 +299,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-bottom: 80px;
+    padding: 0 24px 80px;
 }
 
 .orbit-info.darker-bg {
@@ -333,6 +334,8 @@ a {
 .orbit-container li img {
     min-height: 600px;
     min-width: 100vw;
+    max-width: initial;
+    width: auto;
 }
 
 /* ========= */
@@ -602,10 +605,31 @@ button.cta.read {
     margin-bottom: 20px;
 }
 
+@media (min-width: 446px) and (max-width: 450px) {
+    button.cta.loginAction:hover:after {
+        margin-left: 30px;
+        top: 30%;
+    }
+}
+
+@media (min-width: 451px) and (max-width: 639px) {
+    button.cta.loginAction:hover:after {
+        margin-left: 48px;
+        top: 15%;
+    }
+}
+
 @media (min-width: 640px) {
     .tel {
         text-align: right;
         margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1273px) {
+    button.cta.loginAction:hover:after {
+        margin-left: 48px;
+        top: 15%;
     }
 }
 
@@ -1039,15 +1063,18 @@ section.finePrintSection.padTop {
 }
 
 .supportBanner p {
-    padding: 60px 100px;
+    /*padding: 60px 100px;*/
     color: #ffffff;
-    font-size: 22px;
+    /*font-size: 22px; */
     text-align: center;
+    padding: 30px;
+    font-size: 18px;
 }
 
 .supportBullets {
-    padding: 40px 80px;
+    /*padding: 40px 80px;*/
     margin-bottom: 80px;
+    padding: 40px 24px;
 }
 
 .marketingSupport {
@@ -1074,14 +1101,70 @@ section.finePrintSection.padTop {
 }
 
 .supportBullets ul {
-    padding: 20px 0 0 0;
-    margin: 0 0 0 0;
+    padding: 20px 20px 0;
+    margin: 0 0 24px 0;
 }
 
 .supportBullets ul li {
-    font-size: 24px;
     color: #4A4A4A;
     line-height: 1.8;
+    list-style-image: url('../images/tick.gif');
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+@media (min-width: 640px) {
+    .supportHeader {
+        text-align: center;
+        font-weight: 400;
+        margin-top: 60px;
+    }
+
+    .supportBanner p {
+        padding: 60px 100px;
+        color: #ffffff;
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .supportBullets {
+        padding: 40px 80px;
+        margin-bottom: 80px;
+    }
+
+    .marketingSupport {
+        padding: 30px 40px;
+    }
+
+    .marketingSupport img {
+        width: 280px;
+        height: 173px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .marketingSupport h3 {
+        font-size: 28px;
+        font-weight: 400;
+        text-align: center;
+        margin: 30px 0 15px;
+    }
+
+    .marketingSupport p {
+        margin: 0 0 0 0;
+        color: #4A4A4A;
+    }
+
+    .supportBullets ul {
+        padding: 20px 0 0 0;
+        margin: 0 0 0 0;
+    }
+
+    .supportBullets ul li {
+        font-size: 24px;
+        color: #4A4A4A;
+        line-height: 1.8;
+    }
 }
 
 /* ======== */
