@@ -57,7 +57,7 @@ p, div, span {
 /* ========= */
 
 .primaryBg {
-    background-color: #007dc3;
+    background-color: #009DDD;
 }
 
 .secondaryBg {
@@ -65,11 +65,11 @@ p, div, span {
 }
 
 .primary {
-    color: #007dc3;
+    color: #009DDD;
 }
 
 button.cta.primary {
-    color: #007dc3;
+    color: #009DDD;
 }
 
 .secondary {
@@ -81,7 +81,8 @@ button.cta.secondary {
 }
 
 .secondaryHover:hover {
-    color: #7FC34E;
+    /*color: #7FC34E;*/
+    color: #599141;
 }
 
 .pageText {
@@ -98,7 +99,7 @@ button.cta.secondary {
 }
 
 .primaryBorder {
-    border: 1px solid #007dc3;
+    border: 1px solid #009DDD;
 }
 
 .secondaryBorder {
@@ -110,7 +111,7 @@ button.cta.secondaryBorder {
 }
 
 .primaryHover:hover {
-    color: #10537B;
+    color: #036584;
 }
 
 .finePrint {
@@ -191,7 +192,8 @@ a {
     height: 37px;
     width: 100px;
     color: transparent;
-    background-image: url('../images/logo.png');
+    /*background-image: url('../images/logo.png');*/
+    background-image: url('../images/eq-logo@2x.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: auto 100%;
@@ -235,7 +237,7 @@ a {
 }
 
 .navItem a.loginLink {
-    border: 1px solid #007dc3;
+    border: 1px solid #009DDD;
     padding: 10px 0;
 }
 
@@ -519,7 +521,7 @@ button.cta a:not(.clientLogin) {
 }
 
 .header button.cta a {
-    color: #007dc3;
+    color: #009DDD;
 }
 
 button.cta.clientLoginBtn a:not(.clientLogin) {
@@ -558,7 +560,7 @@ button.cta:after {
     font-style: normal;
     font-variant: normal;
     text-rendering: auto;
-    top: 13%;
+    top: 12%;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -623,7 +625,8 @@ button.cta.read {
     display: inline-block;
     font-size: 20px;
     margin-top: 10px;
-    color: #81C153;
+    /*color: #81C153;*/
+    color: #7fc34e;
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
